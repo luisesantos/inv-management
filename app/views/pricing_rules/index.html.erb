@@ -1,0 +1,43 @@
+<h1>Listing pricing_rules</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Applytocustomer</th>
+    <th>Applytoproduct</th>
+    <th>Priceadjustmenttype</th>
+    <th>Priceadjustmentpercentage</th>
+    <th>Relativeto</th>
+    <th>Amount</th>
+    <th>Operator</th>
+    <th>Fixedvalue</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pricing_rules.each do |pricing_rule| %>
+  <tr>
+    <td><%= pricing_rule.id %></td>
+    <td><%= pricing_rule.name %></td>
+    <td><%= pricing_rule.description %></td>
+    <td><%= pricing_rule.applyToCustomer %></td>
+    <td><%= pricing_rule.applyToProduct %></td>
+    <td><%= pricing_rule.priceAdjustmentType %></td>
+    <td><%= pricing_rule.priceAdjustmentPercentage %></td>
+    <td><%= pricing_rule.relativeTo %></td>
+    <td><%= pricing_rule.amount %></td>
+    <td><%= pricing_rule.operator %></td>
+    <td><%= pricing_rule.fixedValue %></td>
+    <td><%= link_to 'Show', pricing_rule %></td>
+    <td><%= link_to 'Edit', edit_pricing_rule_path(pricing_rule) %></td>
+    <td><%= link_to 'Destroy', pricing_rule, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pricing rule', new_pricing_rule_path %>

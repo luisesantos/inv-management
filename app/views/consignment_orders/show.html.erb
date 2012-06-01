@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @consignment_order.id %>
+</p>
+
+<p>
+  <b>Ordernumber:</b>
+  <%= @consignment_order.orderNumber %>
+</p>
+
+
+<%= link_to 'Edit', edit_consignment_order_path(@consignment_order) %> |
+<%= link_to 'Back', consignment_orders_path %>

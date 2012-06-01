@@ -1,0 +1,77 @@
+<%= form_for(@receiving_order) do |f| %>
+  <% if @receiving_order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@receiving_order.errors.count, "error") %> prohibited this receiving_order from being saved:</h2>
+
+      <ul>
+      <% @receiving_order.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.number_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :orderNumber %><br />
+    <%= f.text_field :orderNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :refNumber %><br />
+    <%= f.text_field :refNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :billDate %><br />
+    <%= f.date_select :billDate %>
+  </div>
+  <div class="field">
+    <%= f.label :packageCount %><br />
+    <%= f.number_field :packageCount %>
+  </div>
+  <div class="field">
+    <%= f.label :receivedQty %><br />
+    <%= f.text_field :receivedQty %>
+  </div>
+  <div class="field">
+    <%= f.label :rejectedQty %><br />
+    <%= f.text_field :rejectedQty %>
+  </div>
+  <div class="field">
+    <%= f.label :totalQty %><br />
+    <%= f.text_field :totalQty %>
+  </div>
+  <div class="field">
+    <%= f.label :receiveDate %><br />
+    <%= f.date_select :receiveDate %>
+  </div>
+  <div class="field">
+    <%= f.label :reconcileDate %><br />
+    <%= f.date_select :reconcileDate %>
+  </div>
+  <div class="field">
+    <%= f.label :reason %><br />
+    <%= f.text_field :reason %>
+  </div>
+  <div class="field">
+    <%= f.label :trackingNumber %><br />
+    <%= f.text_field :trackingNumber %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

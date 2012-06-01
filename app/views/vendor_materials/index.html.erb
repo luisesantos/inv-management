@@ -1,0 +1,23 @@
+<h1>Listing vendor_materials</h1>
+
+<table>
+  <tr>
+    <th>Price</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @vendor_materials.each do |vendor_material| %>
+  <tr>
+    <td><%= vendor_material.price %></td>
+    <td><%= link_to 'Show', vendor_material %></td>
+    <td><%= link_to 'Edit', edit_vendor_material_path(vendor_material) %></td>
+    <td><%= link_to 'Destroy', vendor_material, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Vendor material', new_vendor_material_path %>

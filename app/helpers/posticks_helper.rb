@@ -1,0 +1,2 @@
+module PosticksHelper
+end

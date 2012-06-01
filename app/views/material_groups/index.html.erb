@@ -1,0 +1,27 @@
+<h1>Listing material_groups</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @material_groups.each do |material_group| %>
+  <tr>
+    <td><%= material_group.id %></td>
+    <td><%= material_group.name %></td>
+    <td><%= material_group.description %></td>
+    <td><%= link_to 'Show', material_group %></td>
+    <td><%= link_to 'Edit', edit_material_group_path(material_group) %></td>
+    <td><%= link_to 'Destroy', material_group, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Material group', new_material_group_path %>

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @rma_order.id %>
+</p>
+
+<p>
+  <b>Ordernumber:</b>
+  <%= @rma_order.orderNumber %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @rma_order.status %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @rma_order.type %>
+</p>
+
+<p>
+  <b>Vendorrmanumber:</b>
+  <%= @rma_order.vendorRmaNumber %>
+</p>
+
+
+<%= link_to 'Edit', edit_rma_order_path(@rma_order) %> |
+<%= link_to 'Back', rma_orders_path %>

@@ -1,0 +1,27 @@
+<h1>Listing business_processes</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @business_processes.each do |business_process| %>
+  <tr>
+    <td><%= business_process.id %></td>
+    <td><%= business_process.name %></td>
+    <td><%= business_process.description %></td>
+    <td><%= link_to 'Show', business_process %></td>
+    <td><%= link_to 'Edit', edit_business_process_path(business_process) %></td>
+    <td><%= link_to 'Destroy', business_process, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Business process', new_business_process_path %>

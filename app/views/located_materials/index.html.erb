@@ -1,0 +1,25 @@
+<h1>Listing located_materials</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Qty</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @located_materials.each do |located_material| %>
+  <tr>
+    <td><%= located_material.id %></td>
+    <td><%= located_material.qty %></td>
+    <td><%= link_to 'Show', located_material %></td>
+    <td><%= link_to 'Edit', edit_located_material_path(located_material) %></td>
+    <td><%= link_to 'Destroy', located_material, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Located material', new_located_material_path %>

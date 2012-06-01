@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @schema_field.id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @schema_field.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_schema_field_path(@schema_field) %> |
+<%= link_to 'Back', schema_fields_path %>

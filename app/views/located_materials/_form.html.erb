@@ -1,0 +1,25 @@
+<%= form_for(@located_material) do |f| %>
+  <% if @located_material.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@located_material.errors.count, "error") %> prohibited this located_material from being saved:</h2>
+
+      <ul>
+      <% @located_material.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.number_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :qty %><br />
+    <%= f.text_field :qty %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,27 @@
+<h1>Listing pick_orders</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pick_orders.each do |pick_order| %>
+  <tr>
+    <td><%= pick_order.id %></td>
+    <td><%= pick_order.name %></td>
+    <td><%= pick_order.description %></td>
+    <td><%= link_to 'Show', pick_order %></td>
+    <td><%= link_to 'Edit', edit_pick_order_path(pick_order) %></td>
+    <td><%= link_to 'Destroy', pick_order, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pick order', new_pick_order_path %>

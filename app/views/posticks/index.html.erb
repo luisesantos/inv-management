@@ -1,0 +1,25 @@
+<h1>Listing posticks</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @posticks.each do |postick| %>
+  <tr>
+    <td><%= postick.title %></td>
+    <td><%= postick.description %></td>
+    <td><%= link_to 'Show', postick %></td>
+    <td><%= link_to 'Edit', edit_postick_path(postick) %></td>
+    <td><%= link_to 'Destroy', postick, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Postick', new_postick_path %>

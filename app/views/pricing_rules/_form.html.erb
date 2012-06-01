@@ -1,0 +1,61 @@
+<%= form_for(@pricing_rule) do |f| %>
+  <% if @pricing_rule.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pricing_rule.errors.count, "error") %> prohibited this pricing_rule from being saved:</h2>
+
+      <ul>
+      <% @pricing_rule.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.number_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :applyToCustomer %><br />
+    <%= f.text_field :applyToCustomer %>
+  </div>
+  <div class="field">
+    <%= f.label :applyToProduct %><br />
+    <%= f.text_field :applyToProduct %>
+  </div>
+  <div class="field">
+    <%= f.label :priceAdjustmentType %><br />
+    <%= f.text_field :priceAdjustmentType %>
+  </div>
+  <div class="field">
+    <%= f.label :priceAdjustmentPercentage %><br />
+    <%= f.text_field :priceAdjustmentPercentage %>
+  </div>
+  <div class="field">
+    <%= f.label :relativeTo %><br />
+    <%= f.text_field :relativeTo %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br />
+    <%= f.text_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :operator %><br />
+    <%= f.text_field :operator %>
+  </div>
+  <div class="field">
+    <%= f.label :fixedValue %><br />
+    <%= f.text_field :fixedValue %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

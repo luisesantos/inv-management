@@ -1,0 +1,2 @@
+module LocatedMaterialsHelper
+end

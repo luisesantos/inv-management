@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @pricing_rule.id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @pricing_rule.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @pricing_rule.description %>
+</p>
+
+<p>
+  <b>Applytocustomer:</b>
+  <%= @pricing_rule.applyToCustomer %>
+</p>
+
+<p>
+  <b>Applytoproduct:</b>
+  <%= @pricing_rule.applyToProduct %>
+</p>
+
+<p>
+  <b>Priceadjustmenttype:</b>
+  <%= @pricing_rule.priceAdjustmentType %>
+</p>
+
+<p>
+  <b>Priceadjustmentpercentage:</b>
+  <%= @pricing_rule.priceAdjustmentPercentage %>
+</p>
+
+<p>
+  <b>Relativeto:</b>
+  <%= @pricing_rule.relativeTo %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @pricing_rule.amount %>
+</p>
+
+<p>
+  <b>Operator:</b>
+  <%= @pricing_rule.operator %>
+</p>
+
+<p>
+  <b>Fixedvalue:</b>
+  <%= @pricing_rule.fixedValue %>
+</p>
+
+
+<%= link_to 'Edit', edit_pricing_rule_path(@pricing_rule) %> |
+<%= link_to 'Back', pricing_rules_path %>

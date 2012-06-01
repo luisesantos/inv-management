@@ -1,0 +1,27 @@
+<h1>Listing employee_groups</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @employee_groups.each do |employee_group| %>
+  <tr>
+    <td><%= employee_group.id %></td>
+    <td><%= employee_group.name %></td>
+    <td><%= employee_group.description %></td>
+    <td><%= link_to 'Show', employee_group %></td>
+    <td><%= link_to 'Edit', edit_employee_group_path(employee_group) %></td>
+    <td><%= link_to 'Destroy', employee_group, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Employee group', new_employee_group_path %>

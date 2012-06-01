@@ -1,0 +1,27 @@
+<h1>Listing carriers</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @carriers.each do |carrier| %>
+  <tr>
+    <td><%= carrier.id %></td>
+    <td><%= carrier.name %></td>
+    <td><%= carrier.description %></td>
+    <td><%= link_to 'Show', carrier %></td>
+    <td><%= link_to 'Edit', edit_carrier_path(carrier) %></td>
+    <td><%= link_to 'Destroy', carrier, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Carrier', new_carrier_path %>

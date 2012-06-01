@@ -1,0 +1,51 @@
+<h1>Listing receiving_orders</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Ordernumber</th>
+    <th>Status</th>
+    <th>Refnumber</th>
+    <th>Billdate</th>
+    <th>Packagecount</th>
+    <th>Receivedqty</th>
+    <th>Rejectedqty</th>
+    <th>Totalqty</th>
+    <th>Receivedate</th>
+    <th>Reconciledate</th>
+    <th>Reason</th>
+    <th>Trackingnumber</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @receiving_orders.each do |receiving_order| %>
+  <tr>
+    <td><%= receiving_order.id %></td>
+    <td><%= receiving_order.name %></td>
+    <td><%= receiving_order.description %></td>
+    <td><%= receiving_order.orderNumber %></td>
+    <td><%= receiving_order.status %></td>
+    <td><%= receiving_order.refNumber %></td>
+    <td><%= receiving_order.billDate %></td>
+    <td><%= receiving_order.packageCount %></td>
+    <td><%= receiving_order.receivedQty %></td>
+    <td><%= receiving_order.rejectedQty %></td>
+    <td><%= receiving_order.totalQty %></td>
+    <td><%= receiving_order.receiveDate %></td>
+    <td><%= receiving_order.reconcileDate %></td>
+    <td><%= receiving_order.reason %></td>
+    <td><%= receiving_order.trackingNumber %></td>
+    <td><%= link_to 'Show', receiving_order %></td>
+    <td><%= link_to 'Edit', edit_receiving_order_path(receiving_order) %></td>
+    <td><%= link_to 'Destroy', receiving_order, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Receiving order', new_receiving_order_path %>

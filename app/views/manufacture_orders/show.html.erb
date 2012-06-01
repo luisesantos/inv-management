@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @manufacture_order.id %>
+</p>
+
+<p>
+  <b>Ordernumber:</b>
+  <%= @manufacture_order.orderNumber %>
+</p>
+
+
+<%= link_to 'Edit', edit_manufacture_order_path(@manufacture_order) %> |
+<%= link_to 'Back', manufacture_orders_path %>

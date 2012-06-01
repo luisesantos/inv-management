@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @pick_order.id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @pick_order.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @pick_order.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_pick_order_path(@pick_order) %> |
+<%= link_to 'Back', pick_orders_path %>

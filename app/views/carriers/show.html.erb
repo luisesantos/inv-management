@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @carrier.id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @carrier.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @carrier.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_carrier_path(@carrier) %> |
+<%= link_to 'Back', carriers_path %>

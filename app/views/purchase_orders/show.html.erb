@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @purchase_order.id %>
+</p>
+
+<p>
+  <b>Ordernumber:</b>
+  <%= @purchase_order.orderNumber %>
+</p>
+
+
+<%= link_to 'Edit', edit_purchase_order_path(@purchase_order) %> |
+<%= link_to 'Back', purchase_orders_path %>

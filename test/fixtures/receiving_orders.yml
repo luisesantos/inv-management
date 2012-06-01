@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  name: MyString
+  description: MyString
+  orderNumber: MyString
+  status: MyString
+  refNumber: MyString
+  billDate: 2012-04-22
+  packageCount: 1
+  receivedQty: 1.5
+  rejectedQty: 1.5
+  totalQty: 1.5
+  receiveDate: 2012-04-22
+  reconcileDate: 2012-04-22
+  reason: MyString
+  trackingNumber: MyString
+
+two:
+  id: 1
+  name: MyString
+  description: MyString
+  orderNumber: MyString
+  status: MyString
+  refNumber: MyString
+  billDate: 2012-04-22
+  packageCount: 1
+  receivedQty: 1.5
+  rejectedQty: 1.5
+  totalQty: 1.5
+  receiveDate: 2012-04-22
+  reconcileDate: 2012-04-22
+  reason: MyString
+  trackingNumber: MyString

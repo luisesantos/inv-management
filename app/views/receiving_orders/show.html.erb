@@ -1,0 +1,80 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @receiving_order.id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @receiving_order.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @receiving_order.description %>
+</p>
+
+<p>
+  <b>Ordernumber:</b>
+  <%= @receiving_order.orderNumber %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @receiving_order.status %>
+</p>
+
+<p>
+  <b>Refnumber:</b>
+  <%= @receiving_order.refNumber %>
+</p>
+
+<p>
+  <b>Billdate:</b>
+  <%= @receiving_order.billDate %>
+</p>
+
+<p>
+  <b>Packagecount:</b>
+  <%= @receiving_order.packageCount %>
+</p>
+
+<p>
+  <b>Receivedqty:</b>
+  <%= @receiving_order.receivedQty %>
+</p>
+
+<p>
+  <b>Rejectedqty:</b>
+  <%= @receiving_order.rejectedQty %>
+</p>
+
+<p>
+  <b>Totalqty:</b>
+  <%= @receiving_order.totalQty %>
+</p>
+
+<p>
+  <b>Receivedate:</b>
+  <%= @receiving_order.receiveDate %>
+</p>
+
+<p>
+  <b>Reconciledate:</b>
+  <%= @receiving_order.reconcileDate %>
+</p>
+
+<p>
+  <b>Reason:</b>
+  <%= @receiving_order.reason %>
+</p>
+
+<p>
+  <b>Trackingnumber:</b>
+  <%= @receiving_order.trackingNumber %>
+</p>
+
+
+<%= link_to 'Edit', edit_receiving_order_path(@receiving_order) %> |
+<%= link_to 'Back', receiving_orders_path %>

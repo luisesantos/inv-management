@@ -1,0 +1,2 @@
+module VendorMaterialsHelper
+end

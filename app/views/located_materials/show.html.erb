@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @located_material.id %>
+</p>
+
+<p>
+  <b>Qty:</b>
+  <%= @located_material.qty %>
+</p>
+
+
+<%= link_to 'Edit', edit_located_material_path(@located_material) %> |
+<%= link_to 'Back', located_materials_path %>

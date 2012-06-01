@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @postick.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @postick.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_postick_path(@postick) %> |
+<%= link_to 'Back', posticks_path %>

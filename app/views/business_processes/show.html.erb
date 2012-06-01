@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @business_process.id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @business_process.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @business_process.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_business_process_path(@business_process) %> |
+<%= link_to 'Back', business_processes_path %>

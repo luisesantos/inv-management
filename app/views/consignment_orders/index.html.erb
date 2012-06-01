@@ -1,0 +1,25 @@
+<h1>Listing consignment_orders</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Ordernumber</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @consignment_orders.each do |consignment_order| %>
+  <tr>
+    <td><%= consignment_order.id %></td>
+    <td><%= consignment_order.orderNumber %></td>
+    <td><%= link_to 'Show', consignment_order %></td>
+    <td><%= link_to 'Edit', edit_consignment_order_path(consignment_order) %></td>
+    <td><%= link_to 'Destroy', consignment_order, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Consignment order', new_consignment_order_path %>

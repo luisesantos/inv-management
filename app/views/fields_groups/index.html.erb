@@ -1,0 +1,27 @@
+<h1>Listing fields_groups</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @fields_groups.each do |fields_group| %>
+  <tr>
+    <td><%= fields_group.id %></td>
+    <td><%= fields_group.name %></td>
+    <td><%= fields_group.description %></td>
+    <td><%= link_to 'Show', fields_group %></td>
+    <td><%= link_to 'Edit', edit_fields_group_path(fields_group) %></td>
+    <td><%= link_to 'Destroy', fields_group, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Fields group', new_fields_group_path %>

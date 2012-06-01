@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @transfer_order.id %>
+</p>
+
+<p>
+  <b>Ordernumber:</b>
+  <%= @transfer_order.orderNumber %>
+</p>
+
+
+<%= link_to 'Edit', edit_transfer_order_path(@transfer_order) %> |
+<%= link_to 'Back', transfer_orders_path %>
